@@ -47,6 +47,8 @@ gem "bootsnap", require: false
 
 gem "slim-rails"
 
+gem "simple_form", "~> 5.1.0"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
