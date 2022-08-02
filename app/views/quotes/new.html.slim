@@ -1,0 +1,7 @@
+.container 
+  = link_to sanitize('&larr; Back to Quotes'), quotes_path
+
+  .header
+    h1 New Quote
+
+  = render 'form', quote: @quote
