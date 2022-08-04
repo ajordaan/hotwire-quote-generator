@@ -1,2 +1,13 @@
-= turbo_stream.append "quotes", partial: "quotes/quote", locals: { quote: @quote }
+= turbo_stream.append "quotes" do
+  = render @quote
+
 = turbo_stream.update Quote.new, ""
+
+/ = turbo_stream.append "quotes", partial: "quotes/quote", locals: { quote: @quote }
+/ is the same as
+/ = turbo_stream.prepend "quotes" do
+/   = render partial: "quotes/quote", locals: { quote: @quote }
+
+/ render partial: "quotes/quote", locals: { quote: @quote }
+/ is the same as
+/ render @quote
