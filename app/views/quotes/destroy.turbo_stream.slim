@@ -3,4 +3,5 @@
 // turbo_stream.remove dom_id(@quote)
 // turbo_stream.remove @quote
 
-= turbo_stream.remove "quote_#{@quote.id}"
+= turbo_stream.remove @quote
+= render_turbo_stream_flash_message
