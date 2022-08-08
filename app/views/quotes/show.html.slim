@@ -7,6 +7,7 @@
     = link_to "New date", new_quote_line_item_date_path(@quote), class: "btn btn--primary", data: { turbo_frame: dom_id(LineItemDate.new) }
   
 
-  = render @line_item_dates, quote: @quote 
-
   = turbo_frame_tag LineItemDate.new
+  /Needed so turbo stream knows where to append new line items:
+  = turbo_frame_tag "line_item_dates" 
+    = render @line_item_dates, quote: @quote 
