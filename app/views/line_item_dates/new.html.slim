@@ -4,4 +4,5 @@ main.container
   .header
     h1 New Date
 
-  = render "form", quote: @quote, line_item_date: @line_item_date
+  = turbo_frame_tag @line_item_date do
+    = render "form", quote: @quote, line_item_date: @line_item_date
