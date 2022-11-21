@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This quote/invoice generator was built by following [this excellent tutorial](https://www.hotrails.dev/turbo-rails) on building a CRUD app using hotwire and turbo.
 
-Things you may want to cover:
+I learned a great deal about hotwire and how to add it into a rails app to give a more SPA-like feeling, while following the best practices of a traditional rails app
 
-* Ruby version
+To prevent mindless copy-pasting there are some things I did differently from the tutorial.
 
-* System dependencies
+### Differences from the tutorial:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Used Slim templates instead of ERB
