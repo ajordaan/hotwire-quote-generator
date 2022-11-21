@@ -49,6 +49,8 @@ gem "slim-rails"
 
 gem "simple_form", "~> 5.1.0"
 
+gem "devise", "~> 4.8.1"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -76,4 +78,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem 'minitest'
+  gem 'minitest-reporters'
 end

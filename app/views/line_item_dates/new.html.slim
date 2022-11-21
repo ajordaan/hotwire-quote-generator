@@ -1,0 +1,8 @@
+main.container
+  = link_to sanitize("&larr; Back to quote"), quotes_path(@quote)
+
+  .header
+    h1 New Date
+
+  = turbo_frame_tag @line_item_date do
+    = render "form", quote: @quote, line_item_date: @line_item_date
