@@ -5,6 +5,7 @@ main.container
     h1
       | New Item for
       = l(@line_item_date.date, format: :long)
+  = turbo_frame_tag nested_dom_id(@line_item_date, LineItem.new) do
 
-  = render "form", quote: @quote, line_item_date: @line_item_date, line_item: @line_item
+    = render "form", quote: @quote, line_item_date: @line_item_date, line_item: @line_item
 
