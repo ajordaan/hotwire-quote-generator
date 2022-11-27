@@ -1,0 +1,8 @@
+main.container
+  = link_to sanitize("&larr; Back to quotes"), quote_path(@quote)
+
+  .header
+    h1 Edit Item
+
+  = render "form", quote: @quote, line_item_date: @line_item_date, line_item: @line_item
+

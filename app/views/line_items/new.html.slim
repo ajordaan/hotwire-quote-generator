@@ -1,0 +1,10 @@
+main.container
+  = link_to sanitize("&larr; Back to quotes"), quote_path(@quote)
+
+  .header
+    h1
+      | New Item for
+      = l(@line_item_date.date, format: :long)
+
+  = render "form", quote: @quote, line_item_date: @line_item_date, line_item: @line_item
+
