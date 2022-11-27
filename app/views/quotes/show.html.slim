@@ -1,4 +1,4 @@
-.container
+main.container.mb-xxxxl
   = link_to sanitize("&larr; Back to quotes"), quotes_path
 
   .header
@@ -11,3 +11,6 @@
   /Needed so turbo stream knows where to append new line items:
   = turbo_frame_tag "line_item_dates" 
     = render @line_item_dates, quote: @quote 
+
+= turbo_frame_tag dom_id(@quote, :total)
+  = render "quotes/total", quote: @quote
