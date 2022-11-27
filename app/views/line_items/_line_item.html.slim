@@ -4,7 +4,7 @@
       = line_item.name
       .line-item__description
         = simple_format line_item.description
-    .line-otem__quantity-price
+    .line-item__quantity-price
       = line_item.quantity
       | &times;
       = number_to_currency line_item.unit_price
